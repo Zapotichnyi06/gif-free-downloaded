@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #001d3a;
+    color: #ececec;
+    font-family: 'Apple Color Emoji', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.header-main {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #0080ff 0%, #ffffff 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(0, 29, 58, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item {
+    background-color: #ececec;
+    color: #001d3a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 1 1 calc(33.333% - 40px); /* Три колонки с отступом */
+    max-width: calc(33.333% - 40px); /* Три колонки с отступом */
+    box-sizing: border-box;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
